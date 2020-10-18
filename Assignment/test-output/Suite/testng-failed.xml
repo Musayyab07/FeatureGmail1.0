@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="PositiveTest(failed)">
+    <classes>
+      <class name="tests.LoginSuccess">
+        <methods>
+          <include name="loginSuccess"/>
+          <include name="closure"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.LoginSuccess -->
+    </classes>
+  </test> <!-- PositiveTest(failed) -->
+  <test thread-count="5" name="NegativeTest(failed)">
+    <classes>
+      <class name="tests.WrongPassword">
+        <methods>
+          <include name="loginWithWrongPwd"/>
+          <include name="closure"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.WrongPassword -->
+    </classes>
+  </test> <!-- NegativeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
