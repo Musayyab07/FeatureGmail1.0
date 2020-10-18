@@ -30,7 +30,7 @@ public class ComposeTest extends InitializeDriver{
 	
 	@Test(priority=2)
 	public void ccMail() {
-		compose.ccTest("musayyab1994@gmail.com","hirolimusayyab@gmail.com","CommaSeparatedMailIds");
+		compose.ccTest("musayyab1994@gmail.com","hirolimusayyab@gmail.com","TestMultipleRecipients");
 	}
 
 	@BeforeClass
