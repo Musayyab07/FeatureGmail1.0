@@ -21,12 +21,6 @@ public class InitializeDriver {
 		 return driver;
 	 }
 	 
-	 public static WebDriver getChromeDriverNormal() {
-		 System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\chromedriver.exe");
-		 driver = new ChromeDriver();
-		 driver.manage().window().maximize();
-		 return driver;
-	 }
 	
 	 public static WebDriverWait getWebDriverWait(WebDriver driver) {
 		 wait = new WebDriverWait(driver,60);
